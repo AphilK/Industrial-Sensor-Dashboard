@@ -144,6 +144,7 @@ def run_simulation():
         return
     
     print("Starting simulation (Press Ctrl + C to stop)")
+    time.sleep(2)
 
     item_counter = 1
     active_threads = []
@@ -153,10 +154,12 @@ def run_simulation():
         publish_event(client, station, "idle")
 
     print("Idle states published.")
+    time.sleep(1)
     
     try:
         print(f"\n=== MAX {MAX_CONCURRENT_ITEMS} ITEMS CONCURRENT ===")
         print(f"=== Interval between launches: {ITEM_LAUNCH_INTERVAL[0]}-{ITEM_LAUNCH_INTERVAL[1]}s ===\n")
+        time.sleep(2)
 
         while True:
             while not connected:
