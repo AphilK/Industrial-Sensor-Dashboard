@@ -1,4 +1,3 @@
-from itertools import cycle
 import time
 import json
 import random
