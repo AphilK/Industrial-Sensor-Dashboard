@@ -205,3 +205,7 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Ignorar dados e logs do Mosquitto
+mosquitto/data/*
+mosquitto/log/*
